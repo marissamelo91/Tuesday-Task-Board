@@ -1,7 +1,7 @@
 # Third-Party APIs Challenge: Tuesday Task Board
 
 ## User Story 
-As a project manager, I want to develops a task board so I can add, manage and track tasks.
+As a project manager, I want to develop a task board so I can add, manage and track tasks.
 
 ## Description
 The Task Board is an interactive webpage that allows you to add, drag and delete tasks.
@@ -13,7 +13,7 @@ If a task is near its deadline, the task will turn yellow. If its overdue, it wi
 
 
 ## Deployed Link
-
+https://marissamelo91.github.io/Tuesday-Task-Board/
 
 
 ## Credits
