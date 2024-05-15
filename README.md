@@ -9,10 +9,11 @@ A new task can be created by clicking Add Task. Once the task is created, it can
 If a task is near its deadline, the task will turn yellow. If its overdue, it will turn red. Tasks can also be deleted to show its been completed. 
 
 ## Screenshots
-![screenshot](./assets/css/TaskBoard.png)
+![screenshot](./assets/css/Task-Board.png)
 
 
 ## Deployed Link
+
 https://marissamelo91.github.io/Tuesday-Task-Board/
 
 

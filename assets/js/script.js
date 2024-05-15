@@ -23,9 +23,9 @@ function createTaskCard(task) {
   cardDeleteBtn.on('click', handleDeleteTask);
 
   // ? Sets the card background color based on due date. Only apply the styles if the dueDate exists and the status is not done.
-  if (task.dueDate && task.status !== 'done') {
+  if (task.date && task.status !== 'done') {
     const now = dayjs();
-    const taskDueDate = dayjs(task.dueDate, 'DD/MM/YYYY');
+    const taskDueDate = dayjs(task.date, 'DD/MM/YYYY');
     console.log(task, taskDueDate)
     // ? If the task is due today, make the card yellow. If it is overdue, make it red.
     if (now.isSame(taskDueDate, 'day')) {
@@ -113,11 +113,14 @@ function handleDeleteTask(event) {
   event.preventDefault();
   const taskId = $(this).attr("data-task-id")
   console.log(taskId);
+  taskList = JSON.parse(localStorage.getItem("savedTasks")) || [];
+  console.log (taskList);
+ 
   taskList = taskList.filter(function (task) {
     return task.id !== taskId
   })
   localStorage.setItem("savedTasks", JSON.stringify(taskList))
-  renderTaskList()
+  renderTaskList();
 }
 
 // Todo: create a function to handle dropping a task into a new status lane
